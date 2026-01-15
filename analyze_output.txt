@@ -1,0 +1,142 @@
+﻿Analyzing SMARTPANTRY...                                        
+
+   info - Parameter 'key' could be a super parameter - lib\core\animations\custom_animations.dart:14:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\core\animations\custom_animations.dart:68:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\core\animations\custom_animations.dart:142:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\core\animations\custom_animations.dart:214:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\core\animations\custom_animations.dart:289:9 - use_super_parameters
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\theme\app_colors.dart:88:43 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\theme\app_colors.dart:89:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\theme\app_colors.dart:90:43 - deprecated_member_use
+  error - The getter 'semiBold' isn't defined for the type 'FontWeight' - lib\core\theme\app_text_styles.dart:29:28 - undefined_getter
+  error - The getter 'semiBold' isn't defined for the type 'FontWeight' - lib\core\theme\app_text_styles.dart:36:28 - undefined_getter
+  error - The getter 'semiBold' isn't defined for the type 'FontWeight' - lib\core\theme\app_text_styles.dart:42:28 - undefined_getter
+  error - The getter 'semiBold' isn't defined for the type 'FontWeight' - lib\core\theme\app_text_styles.dart:48:28 - undefined_getter
+  error - The getter 'medium' isn't defined for the type 'FontWeight' - lib\core\theme\app_text_styles.dart:74:28 - undefined_getter
+  error - The getter 'medium' isn't defined for the type 'FontWeight' - lib\core\theme\app_text_styles.dart:81:28 - undefined_getter
+  error - The getter 'medium' isn't defined for the type 'FontWeight' - lib\core\theme\app_text_styles.dart:88:28 - undefined_getter
+  error - The getter 'medium' isn't defined for the type 'FontWeight' - lib\core\theme\app_text_styles.dart:115:28 - undefined_getter
+  error - The getter 'semiBold' isn't defined for the type 'FontWeight' - lib\core\theme\app_text_styles.dart:121:28 - undefined_getter
+  error - The getter 'medium' isn't defined for the type 'FontWeight' - lib\core\theme\app_text_styles.dart:127:28 - undefined_getter
+   info - Use 'const' with the constructor to improve performance - lib\core\theme\app_theme.dart:17:20 - prefer_const_constructors
+   info - 'background' is deprecated and shouldn't be used. Use surface instead. This feature was deprecated after v3.18.0-0.1.pre - lib\core\theme\app_theme.dart:21:9 - deprecated_member_use
+   info - 'onBackground' is deprecated and shouldn't be used. Use onSurface instead. This feature was deprecated after v3.18.0-0.1.pre - lib\core\theme\app_theme.dart:26:9 - deprecated_member_use
+  error - The argument type 'CardTheme' can't be assigned to the parameter type 'CardThemeData?'.  - lib\core\theme\app_theme.dart:45:18 - argument_type_not_assignable
+   info - Use 'const' with the constructor to improve performance - lib\core\theme\app_theme.dart:108:23 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\core\theme\app_theme.dart:115:23 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\core\theme\app_theme.dart:122:23 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\core\theme\app_theme.dart:148:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\core\theme\app_theme.dart:155:25 - prefer_const_constructors
+  error - The argument type 'DialogTheme' can't be assigned to the parameter type 'DialogThemeData?'.  - lib\core\theme\app_theme.dart:164:20 - argument_type_not_assignable
+   info - 'MaterialStateProperty' is deprecated and shouldn't be used. Use WidgetStateProperty instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\core\theme\app_theme.dart:174:20 - deprecated_member_use
+   info - 'MaterialState' is deprecated and shouldn't be used. Use WidgetState instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\core\theme\app_theme.dart:175:31 - deprecated_member_use
+   info - 'MaterialStateProperty' is deprecated and shouldn't be used. Use WidgetStateProperty instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\core\theme\app_theme.dart:187:21 - deprecated_member_use
+   info - 'MaterialState' is deprecated and shouldn't be used. Use WidgetState instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\core\theme\app_theme.dart:188:31 - deprecated_member_use
+   info - 'MaterialStateProperty' is deprecated and shouldn't be used. Use WidgetStateProperty instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\core\theme\app_theme.dart:193:21 - deprecated_member_use
+   info - 'MaterialState' is deprecated and shouldn't be used. Use WidgetState instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\core\theme\app_theme.dart:194:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\theme\app_theme.dart:195:42 - deprecated_member_use
+  error - The method 'GroceryItemModelAdapter' isn't defined for the type 'HiveService' - lib\data\datasources\hive_service.dart:23:28 - undefined_method
+  error - The method 'GroceryCategoryAdapter' isn't defined for the type 'HiveService' - lib\data\datasources\hive_service.dart:26:28 - undefined_method
+  error - Target of URI doesn't exist: '../theme/app_colors.dart' - lib\data\models\category_model.dart:3:8 - uri_does_not_exist
+  error - Target of URI hasn't been generated: 'package:smartcart_ai/data/models/category_model.g.dart' - lib\data\models\category_model.dart:5:6 - uri_has_not_been_generated
+  error - Undefined name 'AppColors' - lib\data\models\category_model.dart:55:16 - undefined_identifier
+  error - Undefined name 'AppColors' - lib\data\models\category_model.dart:57:16 - undefined_identifier
+  error - Undefined name 'AppColors' - lib\data\models\category_model.dart:59:16 - undefined_identifier
+  error - Undefined name 'AppColors' - lib\data\models\category_model.dart:61:16 - undefined_identifier
+  error - Undefined name 'AppColors' - lib\data\models\category_model.dart:63:16 - undefined_identifier
+  error - Undefined name 'AppColors' - lib\data\models\category_model.dart:65:16 - undefined_identifier
+  error - Undefined name 'AppColors' - lib\data\models\category_model.dart:67:16 - undefined_identifier
+  error - Undefined name 'AppColors' - lib\data\models\category_model.dart:69:16 - undefined_identifier
+  error - Target of URI hasn't been generated: 'package:smartcart_ai/data/models/grocery_item_model.g.dart' - lib\data\models\grocery_item_model.dart:4:6 - uri_has_not_been_generated
+  error - Target of URI doesn't exist: '../models/grocery_item_model.dart' - lib\domain\repositories\grocery_repository.dart:1:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../models/category_model.dart' - lib\domain\repositories\grocery_repository.dart:2:8 - uri_does_not_exist
+  error - Undefined class 'GroceryItemModel' - lib\domain\repositories\grocery_repository.dart:8:24 - undefined_class
+  error - The name 'GroceryItemModel' isn't a type, so it can't be used as a type argument - lib\domain\repositories\grocery_repository.dart:11:8 - non_type_as_type_argument
+  error - The name 'GroceryItemModel' isn't a type, so it can't be used as a type argument - lib\domain\repositories\grocery_repository.dart:14:8 - non_type_as_type_argument
+  error - The name 'GroceryItemModel' isn't a type, so it can't be used as a type argument - lib\domain\repositories\grocery_repository.dart:17:8 - non_type_as_type_argument
+  error - The name 'GroceryCategory' isn't a type, so it can't be used as a type argument - lib\domain\repositories\grocery_repository.dart:20:7 - non_type_as_type_argument
+  error - The name 'GroceryItemModel' isn't a type, so it can't be used as a type argument - lib\domain\repositories\grocery_repository.dart:20:29 - non_type_as_type_argument
+  error - Undefined class 'GroceryItemModel' - lib\domain\repositories\grocery_repository.dart:23:27 - undefined_class
+  error - The name 'GroceryItemModel' isn't a type, so it can't be used as a type argument - lib\domain\repositories\grocery_repository.dart:38:8 - non_type_as_type_argument
+   info - Parameter 'key' could be a super parameter - lib\main.dart:43:9 - use_super_parameters
+   info - 'partialResults' is deprecated and shouldn't be used. Use SpeechListenOptions.partialResults instead - lib\presentation\providers\voice_provider.dart:78:9 - deprecated_member_use
+   info - 'cancelOnError' is deprecated and shouldn't be used. Use SpeechListenOptions.cancelOnError instead - lib\presentation\providers\voice_provider.dart:79:9 - deprecated_member_use
+   info - 'listenMode' is deprecated and shouldn't be used. Use SpeechListenOptions.listenMode instead - lib\presentation\providers\voice_provider.dart:80:9 - deprecated_member_use
+warning - Unused import: 'package:uuid/uuid.dart' - lib\presentation\screens\add_edit_item_screen.dart:3:8 - unused_import
+   info - Parameter 'key' could be a super parameter - lib\presentation\screens\add_edit_item_screen.dart:17:9 - use_super_parameters
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\add_edit_item_screen.dart:186:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\add_edit_item_screen.dart:215:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\add_edit_item_screen.dart:246:52 - deprecated_member_use
+warning - Unused import: '../providers/voice_provider.dart' - lib\presentation\screens\home_screen.dart:8:8 - unused_import
+   info - Parameter 'key' could be a super parameter - lib\presentation\screens\home_screen.dart:19:9 - use_super_parameters
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\home_screen.dart:177:46 - deprecated_member_use
+   info - Unnecessary use of 'toList' in a spread - lib\presentation\screens\home_screen.dart:246:14 - unnecessary_to_list_in_spreads
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\home_screen.dart:263:38 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\home_screen.dart:266:36 - deprecated_member_use
+   info - Unnecessary use of 'toList' in a spread - lib\presentation\screens\home_screen.dart:301:14 - unnecessary_to_list_in_spreads
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\home_screen.dart:319:46 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\home_screen.dart:325:46 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\home_screen.dart:355:45 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\home_screen.dart:358:47 - deprecated_member_use
+   info - Parameter 'key' could be a super parameter - lib\presentation\screens\settings_screen.dart:13:9 - use_super_parameters
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\settings_screen.dart:154:46 - deprecated_member_use
+   info - Parameter 'key' could be a super parameter - lib\presentation\screens\splash_screen.dart:11:9 - use_super_parameters
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\splash_screen.dart:87:37 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\splash_screen.dart:109:58 - deprecated_member_use
+   info - Parameter 'key' could be a super parameter - lib\presentation\screens\voice_input_overlay.dart:14:9 - use_super_parameters
+   info - 'WillPopScope' is deprecated and shouldn't be used. Use PopScope instead. The Android predictive back feature will not work with WillPopScope. This feature was deprecated after v3.12.0-1.0.pre - lib\presentation\screens\voice_input_overlay.dart:105:12 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\voice_input_overlay.dart:118:49 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\presentation\screens\voice_input_overlay.dart:137:45 - prefer_const_constructors
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\voice_input_overlay.dart:211:50 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\voice_input_overlay.dart:212:51 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\presentation\screens\voice_input_overlay.dart:219:23 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\presentation\screens\voice_input_overlay.dart:220:32 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\presentation\screens\voice_input_overlay.dart:226:23 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\presentation\screens\voice_input_overlay.dart:238:15 - prefer_const_constructors
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\voice_input_overlay.dart:269:42 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\presentation\screens\voice_input_overlay.dart:290:31 - prefer_const_constructors
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\voice_input_overlay.dart:326:54 - deprecated_member_use
+   info - Parameter 'key' could be a super parameter - lib\presentation\widgets\animated_checkbox.dart:15:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\presentation\widgets\animated_grocery_item.dart:16:9 - use_super_parameters
+warning - The value of the field '_isPressed' isn't used - lib\presentation\widgets\animated_grocery_item.dart:32:8 - unused_field
+   info - Use 'const' with the constructor to improve performance - lib\presentation\widgets\animated_grocery_item.dart:67:21 - prefer_const_constructors
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\animated_grocery_item.dart:118:34 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\animated_grocery_item.dart:151:43 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\animated_grocery_item.dart:155:46 - deprecated_member_use
+  error - The getter 'color' isn't defined for the type 'GroceryCategory' - lib\presentation\widgets\animated_grocery_item.dart:165:53 - undefined_getter
+  error - The getter 'color' isn't defined for the type 'GroceryCategory' - lib\presentation\widgets\animated_grocery_item.dart:209:51 - undefined_getter
+  error - The getter 'color' isn't defined for the type 'GroceryCategory' - lib\presentation\widgets\animated_grocery_item.dart:215:53 - undefined_getter
+   info - Parameter 'key' could be a super parameter - lib\presentation\widgets\category_card.dart:15:9 - use_super_parameters
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\category_card.dart:81:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\category_card.dart:100:52 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\presentation\widgets\category_card.dart:136:28 - prefer_const_constructors
+warning - Unused import: '../../core/theme/app_text_styles.dart' - lib\presentation\widgets\floating_mic_button.dart:4:8 - unused_import
+   info - Parameter 'key' could be a super parameter - lib\presentation\widgets\floating_mic_button.dart:13:9 - use_super_parameters
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\floating_mic_button.dart:40:46 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\floating_mic_button.dart:41:47 - deprecated_member_use
+   info - Parameter 'key' could be a super parameter - lib\presentation\widgets\glassmorphic_card.dart:17:9 - use_super_parameters
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\glassmorphic_card.dart:38:37 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\glassmorphic_card.dart:51:35 - deprecated_member_use
+  error - The name 'MyApp' isn't a class - test\widget_test.dart:16:35 - creation_with_non_type
+
+flutter : 118 issues 
+found. (ran in 20.8s)
+At line:1 char:1
++ flutter analyze 
+2>&1 | Out-File 
+-FilePath 
+"analyze_output.txt" 
+-Encod ...
++ 
+~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (118 iss   
+ ues found. (ran     
+in 20.8s):String    
+) [], RemoteExce    
+ption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 

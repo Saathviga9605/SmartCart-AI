@@ -1,0 +1,41 @@
+item_name,category,frequency
+milk,dairy,150
+bread,bakery,145
+eggs,dairy,130
+chicken breast,meat,120
+apples,fruits,115
+bananas,fruits,110
+tomatoes,vegetables,105
+lettuce,vegetables,100
+cheese,dairy,95
+yogurt,dairy,90
+orange juice,beverages,85
+coffee,beverages,80
+potato chips,snacks,75
+cookies,snacks,70
+salmon,meat,65
+carrots,vegetables,60
+onions,vegetables,58
+bell peppers,vegetables,55
+strawberries,fruits,52
+blueberries,fruits,50
+ground beef,meat,48
+pork chops,meat,45
+butter,dairy,42
+cream,dairy,40
+bagels,bakery,38
+croissants,bakery,35
+muffins,bakery,33
+soda,beverages,30
+tea,beverages,28
+water,beverages,150
+chocolate,snacks,25
+candy,snacks,22
+popcorn,snacks,20
+crackers,snacks,18
+pasta,other,80
+rice,other,75
+cereal,other,70
+peanut butter,other,45
+jam,other,40
+ketchup,other,35
