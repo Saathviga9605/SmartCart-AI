@@ -3,7 +3,7 @@ import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_text_styles.dart';
 import '../../core/animations/custom_animations.dart';
 import '../../core/animations/animation_constants.dart';
-import 'home_screen.dart';
+import 'main_navigation_screen.dart';
 
 /// Splash screen with animated logo and smooth transitions
 /// Initializes app resources while providing visual delight
@@ -47,13 +47,13 @@ class _SplashScreenState extends State<SplashScreen>
 
     _controller.forward();
 
-    // Navigate to home screen after delay
+    // Navigate to main navigation screen after delay
     Future.delayed(AnimationConstants.splashDuration, () {
       if (mounted) {
         Navigator.of(context).pushReplacement(
           PageRouteBuilder(
             pageBuilder: (context, animation, secondaryAnimation) =>
-                const HomeScreen(),
+                const MainNavigationScreen(),
             transitionsBuilder:
                 (context, animation, secondaryAnimation, child) {
               return FadeTransition(
