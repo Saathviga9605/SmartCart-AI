@@ -2,6 +2,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import '../models/grocery_item_model.dart';
 import '../models/category_model.dart';
 import '../../core/constants/app_constants.dart';
+import '../../core/error/exceptions.dart';
 
 /// Hive service for local data persistence
 /// Handles all database operations for grocery items
@@ -16,28 +17,35 @@ class HiveService {
 
   /// Initialize Hive and register adapters
   Future<void> init() async {
-    await Hive.initFlutter();
+    try {
+      await Hive.initFlutter();
 
-    // Register type adapters
-    if (!Hive.isAdapterRegistered(AppConstants.groceryItemTypeId)) {
-      Hive.registerAdapter(GroceryItemModelAdapter());
-    }
-    if (!Hive.isAdapterRegistered(AppConstants.categoryTypeId)) {
-      Hive.registerAdapter(GroceryCategoryAdapter());
-    }
+      // Register type adapters
+      if (!Hive.isAdapterRegistered(AppConstants.groceryItemTypeId)) {
+        Hive.registerAdapter(GroceryItemModelAdapter());
+      }
+      if (!Hive.isAdapterRegistered(AppConstants.categoryTypeId)) {
+        Hive.registerAdapter(GroceryCategoryAdapter());
+      }
 
-    // Open boxes
-    _groceryBox = await Hive.openBox<GroceryItemModel>(
-      AppConstants.groceryBoxName,
-    );
-    _settingsBox = await Hive.openBox(AppConstants.settingsBoxName);
-    _historyBox = await Hive.openBox(AppConstants.historyBoxName);
+      // Open boxes
+      _groceryBox = await Hive.openBox<GroceryItemModel>(
+        AppConstants.groceryBoxName,
+      );
+      _settingsBox = await Hive.openBox(AppConstants.settingsBoxName);
+      _historyBox = await Hive.openBox(AppConstants.historyBoxName);
+    } catch (e) {
+      throw CacheException(
+        message: 'Failed to initialize Hive',
+        originalError: e,
+      );
+    }
   }
 
   /// Get grocery box
   Box<GroceryItemModel> get groceryBox {
     if (_groceryBox == null || !_groceryBox!.isOpen) {
-      throw Exception('Grocery box not initialized');
+      throw const CacheException(message: 'Grocery box not initialized');
     }
     return _groceryBox!;
   }
@@ -45,7 +53,7 @@ class HiveService {
   /// Get settings box
   Box get settingsBox {
     if (_settingsBox == null || !_settingsBox!.isOpen) {
-      throw Exception('Settings box not initialized');
+      throw const CacheException(message: 'Settings box not initialized');
     }
     return _settingsBox!;
   }
@@ -53,7 +61,7 @@ class HiveService {
   /// Get history box
   Box get historyBox {
     if (_historyBox == null || !_historyBox!.isOpen) {
-      throw Exception('History box not initialized');
+      throw const CacheException(message: 'History box not initialized');
     }
     return _historyBox!;
   }
@@ -62,55 +70,118 @@ class HiveService {
 
   /// Add a new grocery item
   Future<void> addItem(GroceryItemModel item) async {
-    await groceryBox.put(item.id, item);
+    try {
+      await groceryBox.put(item.id, item);
+    } catch (e) {
+      throw CacheException(
+        message: 'Failed to add item: ${item.id}',
+        originalError: e,
+      );
+    }
   }
 
   /// Get all grocery items
   List<GroceryItemModel> getAllItems() {
-    return groceryBox.values.toList();
+    try {
+      return groceryBox.values.toList();
+    } catch (e) {
+      throw CacheException(
+        message: 'Failed to get all items',
+        originalError: e,
+      );
+    }
   }
 
   /// Get active (not done) items
   List<GroceryItemModel> getActiveItems() {
-    return groceryBox.values.where((item) => !item.isDone).toList();
+    try {
+      return groceryBox.values.where((item) => !item.isDone).toList();
+    } catch (e) {
+      throw CacheException(
+        message: 'Failed to get active items',
+        originalError: e,
+      );
+    }
   }
 
   /// Get completed items
   List<GroceryItemModel> getCompletedItems() {
-    return groceryBox.values.where((item) => item.isDone).toList();
+    try {
+      return groceryBox.values.where((item) => item.isDone).toList();
+    } catch (e) {
+      throw CacheException(
+        message: 'Failed to get completed items',
+        originalError: e,
+      );
+    }
   }
 
   /// Get items by category
   List<GroceryItemModel> getItemsByCategory(GroceryCategory category) {
-    return groceryBox.values
-        .where((item) => item.category == category)
-        .toList();
+    try {
+      return groceryBox.values
+          .where((item) => item.category == category)
+          .toList();
+    } catch (e) {
+      throw CacheException(
+        message: 'Failed to get items by category: $category',
+        originalError: e,
+      );
+    }
   }
 
   /// Update an existing item
   Future<void> updateItem(GroceryItemModel item) async {
-    await groceryBox.put(item.id, item);
+    try {
+      await groceryBox.put(item.id, item);
+    } catch (e) {
+      throw CacheException(
+        message: 'Failed to update item: ${item.id}',
+        originalError: e,
+      );
+    }
   }
 
   /// Delete an item
   Future<void> deleteItem(String id) async {
-    await groceryBox.delete(id);
+    try {
+      await groceryBox.delete(id);
+    } catch (e) {
+      throw CacheException(
+        message: 'Failed to delete item: $id',
+        originalError: e,
+      );
+    }
   }
 
   /// Clear all items
   Future<void> clearAllItems() async {
-    await groceryBox.clear();
+    try {
+      await groceryBox.clear();
+    } catch (e) {
+      throw CacheException(
+        message: 'Failed to clear all items',
+        originalError: e,
+      );
+    }
   }
 
   /// Clear completed items
   Future<void> clearCompletedItems() async {
-    final completedIds = groceryBox.values
-        .where((item) => item.isDone)
-        .map((item) => item.id)
-        .toList();
-    
-    for (final id in completedIds) {
-      await groceryBox.delete(id);
+    try {
+      final completedIds = groceryBox.values
+          .where((item) => item.isDone)
+          .map((item) => item.id)
+          .toList();
+      
+      for (final id in completedIds) {
+        await groceryBox.delete(id);
+      }
+    } catch (e) {
+      throw CacheException(
+        message: 'Failed to clear completed items',
+        originalError: e,
+      );
     }
   }
 
@@ -118,42 +189,84 @@ class HiveService {
 
   /// Get a setting value
   T? getSetting<T>(String key, {T? defaultValue}) {
-    return settingsBox.get(key, defaultValue: defaultValue) as T?;
+    try {
+      return settingsBox.get(key, defaultValue: defaultValue) as T?;
+    } catch (e) {
+      throw CacheException(
+        message: 'Failed to get setting: $key',
+        originalError: e,
+      );
+    }
   }
 
   /// Save a setting value
   Future<void> saveSetting(String key, dynamic value) async {
-    await settingsBox.put(key, value);
+    try {
+      await settingsBox.put(key, value);
+    } catch (e) {
+      throw CacheException(
+        message: 'Failed to save setting: $key',
+        originalError: e,
+      );
+    }
   }
 
   // History Operations
 
   /// Save shopping list to history
   Future<void> saveToHistory(List<GroceryItemModel> items) async {
-    final timestamp = DateTime.now().toIso8601String();
-    final historyData = {
-      'timestamp': timestamp,
-      'items': items.map((item) => item.toJson()).toList(),
-    };
-    await historyBox.add(historyData);
+    try {
+      final timestamp = DateTime.now().toIso8601String();
+      final historyData = {
+        'timestamp': timestamp,
+        'items': items.map((item) => item.toJson()).toList(),
+      };
+      await historyBox.add(historyData);
+    } catch (e) {
+      throw CacheException(
+        message: 'Failed to save history',
+        originalError: e,
+      );
+    }
   }
 
   /// Get shopping history
   List<Map<String, dynamic>> getHistory() {
-    return historyBox.values
-        .map((e) => Map<String, dynamic>.from(e as Map))
-        .toList();
+    try {
+      return historyBox.values
+          .map((e) => Map<String, dynamic>.from(e as Map))
+          .toList();
+    } catch (e) {
+      throw CacheException(
+        message: 'Failed to get history',
+        originalError: e,
+      );
+    }
   }
 
   /// Clear history
   Future<void> clearHistory() async {
-    await historyBox.clear();
+    try {
+      await historyBox.clear();
+    } catch (e) {
+      throw CacheException(
+        message: 'Failed to clear history',
+        originalError: e,
+      );
+    }
   }
 
   /// Close all boxes (cleanup)
   Future<void> close() async {
-    await _groceryBox?.close();
-    await _settingsBox?.close();
-    await _historyBox?.close();
+    try {
+      await _groceryBox?.close();
+      await _settingsBox?.close();
+      await _historyBox?.close();
+    } catch (e) {
+      throw CacheException(
+        message: 'Failed to close boxes',
+        originalError: e,
+      );
+    }
   }
 }
