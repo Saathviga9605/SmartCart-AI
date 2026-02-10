@@ -1,0 +1,1303 @@
+item_name,category,frequency
+apple,fruits,115
+banana,fruits,110
+orange,fruits,90
+strawberry,fruits,85
+blueberry,fruits,80
+grape,fruits,75
+pineapple,fruits,70
+mango,fruits,65
+watermelon,fruits,60
+kiwi,fruits,55
+pear,fruits,50
+peach,fruits,45
+plum,fruits,40
+cherry,fruits,35
+raspberry,fruits,30
+blackberry,fruits,25
+lemon,fruits,100
+lime,fruits,95
+avocado,fruits,80
+pomegranate,fruits,40
+cantaloupe,fruits,45
+honeydew,fruits,40
+apricot,fruits,35
+fig,fruits,30
+date,fruits,25
+papaya,fruits,50
+guava,fruits,40
+passion fruit,fruits,30
+dragon fruit,fruits,20
+kiwifruit,fruits,50
+cranberry,fruits,40
+coconut,fruits,60
+nectarine,fruits,45
+persimmon,fruits,20
+lychee,fruits,15
+quince,fruits,10
+rhubarb,fruits,25
+star fruit,fruits,15
+tamarind,fruits,20
+kumquat,fruits,15
+jackfruit,fruits,30
+plantain,fruits,55
+mulberry,fruits,15
+elderberry,fruits,10
+gooseberry,fruits,15
+currant,fruits,20
+boysenberry,fruits,15
+huckleberry,fruits,10
+loganberry,fruits,10
+loquat,fruits,15
+tomato,vegetables,150
+lettuce,vegetables,140
+potato,vegetables,135
+onion,vegetables,130
+carrot,vegetables,125
+broccoli,vegetables,120
+spinach,vegetables,115
+cucumber,vegetables,110
+bell pepper,vegetables,105
+garlic,vegetables,100
+ginger,vegetables,95
+mushroom,vegetables,90
+celery,vegetables,85
+asparagus,vegetables,80
+zucchini,vegetables,75
+eggplant,vegetables,70
+corn,vegetables,65
+peas,vegetables,60
+green beans,vegetables,55
+cauliflower,vegetables,50
+cabbage,vegetables,45
+kale,vegetables,42
+radish,vegetables,40
+sweet potato,vegetables,38
+pumpkin,vegetables,35
+squash,vegetables,32
+beetroot,vegetables,30
+brussels sprouts,vegetables,28
+parsnip,vegetables,25
+turnip,vegetables,22
+leek,vegetables,20
+shallot,vegetables,18
+scallion,vegetables,16
+okra,vegetables,14
+artichoke,vegetables,12
+fennel,vegetables,10
+bok choy,vegetables,20
+napa cabbage,vegetables,15
+daikon,vegetables,12
+jicama,vegetables,10
+watercress,vegetables,8
+radicchio,vegetables,6
+endive,vegetables,5
+kohlrabi,vegetables,4
+rutabaga,vegetables,5
+swede,vegetables,5
+yam,vegetables,30
+yucca,vegetables,25
+cassava,vegetables,20
+taro,vegetables,15
+milk,dairy,200
+eggs,dairy,190
+cheese,dairy,180
+yogurt,dairy,170
+butter,dairy,160
+cream cheese,dairy,150
+sour cream,dairy,140
+cottage cheese,dairy,130
+feta cheese,dairy,120
+parmesan cheese,dairy,110
+mozzarella cheese,dairy,100
+cheddar cheese,dairy,95
+swiss cheese,dairy,90
+provolone cheese,dairy,85
+gouda cheese,dairy,80
+blue cheese,dairy,75
+brie cheese,dairy,70
+whipped cream,dairy,65
+heavy cream,dairy,60
+half and half,dairy,55
+almond milk,dairy,50
+soy milk,dairy,45
+oat milk,dairy,40
+kefir,dairy,35
+ricotta cheese,dairy,30
+mascarpone,dairy,25
+haloumi,dairy,20
+paneer,dairy,25
+gelato,dairy,30
+ice cream,dairy,150
+custard,dairy,60
+margarine,dairy,80
+condensed milk,dairy,40
+evaporated milk,dairy,35
+buttermilk,dairy,30
+ghee,dairy,25
+quark,dairy,15
+skyr,dairy,20
+goat milk,dairy,15
+goat cheese,dairy,40
+camembert,dairy,30
+havarti,dairy,35
+monterey jack,dairy,40
+pepper jack,dairy,45
+colby,dairy,35
+muenster,dairy,30
+pecorino,dairy,40
+manchego,dairy,35
+roaring forty,dairy,10
+stilton,dairy,15
+chicken breast,meat,180
+ground beef,meat,170
+bacon,meat,160
+salmon,meat,150
+turkey,meat,140
+pork chops,meat,130
+steak,meat,120
+lamb chops,meat,110
+sausage,meat,100
+ham,meat,95
+shrimp,meat,90
+tuna,meat,85
+chicken wings,meat,80
+chicken thighs,meat,75
+roast beef,meat,70
+pork ribs,meat,65
+salami,meat,60
+pepperoni,meat,55
+prosciutto,meat,50
+cod,meat,45
+tilapia,meat,40
+crab,meat,35
+lobster,meat,30
+scallops,meat,25
+mussels,meat,20
+clams,meat,15
+duck,meat,25
+venison,meat,20
+veal,meat,15
+bison,meat,12
+rabbit,meat,10
+chorizo,meat,40
+bratwurst,meat,35
+ancovies,meat,15
+sardines,meat,20
+oysters,meat,15
+squid,meat,20
+octopus,meat,15
+corned beef,meat,30
+pastrami,meat,35
+mortadella,meat,25
+bologna,meat,40
+liver,meat,15
+patea,meat,20
+shrimp cocktail,meat,25
+prawns,meat,40
+halibut,meat,30
+swordfish,meat,25
+trout,meat,35
+catfish,meat,30
+bread,bakery,200
+baguette,bakery,150
+croissant,bakery,140
+bagel,bakery,130
+muffin,bakery,120
+donut,bakery,110
+sour dough,bakery,100
+whole wheat bread,bakery,95
+white bread,bakery,90
+rye bread,bakery,85
+pitas,bakery,80
+tortillas,bakery,75
+buns,bakery,70
+dinner rolls,bakery,65
+english muffins,bakery,60
+ciabatta,bakery,55
+focaccia,bakery,50
+brioche,bakery,45
+naan,bakery,40
+breadsticks,bakery,35
+croutons,bakery,30
+biscuits,bakery,25
+scones,bakery,20
+crostini,bakery,15
+pretzels bread,bakery,20
+cornbread,bakery,30
+flatbread,bakery,40
+pumpernickel,bakery,20
+multigrain bread,bakery,50
+loaf,bakery,60
+pita bread,bakery,70
+french bread,bakery,80
+italian bread,bakery,75
+garlic bread,bakery,90
+foccacia,bakery,30
+challah,bakery,25
+lavash,bakery,15
+tortilla shells,bakery,40
+taco shells,bakery,35
+hamburger buns,bakery,50
+hot dog buns,bakery,45
+kaiser rolls,bakery,30
+hoagie rolls,bakery,35
+sub rolls,bakery,40
+wraps,bakery,50
+flat bread,bakery,30
+tortilla chips,bakery,20
+bread crumbs,bakery,50
+panko,bakery,40
+coffee,beverages,180
+tea,beverages,170
+orange juice,beverages,160
+apple juice,beverages,150
+bottled water,beverages,140
+sparkling water,beverages,130
+soda,beverages,120
+energy drink,beverages,110
+iced tea,beverages,100
+lemonade,beverages,95
+grapefruit juice,beverages,90
+cranberry juice,beverages,85
+tomato juice,beverages,80
+v8,beverages,75
+hot chocolate,beverages,70
+ginger ale,beverages,65
+root beer,beverages,60
+cola,beverages,55
+lemon-lime soda,beverages,50
+sport drink,beverages,45
+coconut water,beverages,40
+almond milk beverge,beverages,35
+beer,beverages,150
+wine,beverages,140
+whiskey,beverages,100
+vodka,beverages,90
+gin,beverages,80
+rum,beverages,70
+tequila,beverages,60
+club soda,beverages,55
+tonic water,beverages,50
+seltzer,beverages,45
+cider,beverages,40
+milkshake,beverages,35
+smoothie,beverages,30
+kombucha,beverages,25
+cold brew,beverages,40
+espresso,beverages,50
+matcha,beverages,30
+chai latte,beverages,35
+green tea,beverages,50
+black tea,beverages,60
+herbal tea,beverages,55
+fruit punch,beverages,45
+grape juice,beverages,40
+pineapple juice,beverages,35
+limeade,beverages,30
+margarita mix,beverages,20
+bloody mary mix,beverages,15
+potato chips,snacks,180
+tortilla chips,snacks,170
+popcorn,snacks,160
+pretzels,snacks,150
+nuts,snacks,140
+seeds,snacks,130
+crackers,snacks,120
+cookies,snacks,110
+chocolate,snacks,100
+gummy bears,snacks,95
+trail mix,snacks,90
+beef jerky,snacks,85
+granola bars,snacks,80
+pudding,snacks,75
+jello,snacks,70
+m&ms,snacks,65
+peanuts,snacks,60
+almonds,snacks,55
+cashews,snacks,50
+walnuts,snacks,45
+pistachios,snacks,40
+sunflower seeds,snacks,35
+pumpkin seeds,snacks,30
+fruit snacks,snacks,25
+pop tarts,snacks,20
+rice cakes,snacks,15
+kale chips,snacks,10
+plantain chips,snacks,20
+veggie straws,snacks,25
+cheese puffs,snacks,40
+corn chips,snacks,35
+pita chips,snacks,30
+bagel chips,snacks,25
+croutons snack,snacks,15
+salsa,snacks,50
+guacamole,snacks,45
+hummus snack,snacks,40
+dip,snacks,35
+candy,snacks,60
+marshmallows,snacks,30
+cake,snacks,40
+brownies,snacks,35
+cupcakes,snacks,30
+pastry,snacks,25
+tofu,snacks,15
+tempeh,snacks,10
+seitan,snacks,8
+edamame snack,snacks,15
+seaweed snack,snacks,12
+beef sticks,snacks,20
+pasta,other,150
+rice,other,140
+flour,other,130
+sugar,other,120
+olive oil,other,110
+vegetable oil,other,100
+vinegar,other,90
+salt,other,85
+black pepper,other,80
+soy sauce,other,75
+ketchup,other,70
+mustard,other,65
+mayonnaise,other,60
+honey,other,55
+maple syrup,other,50
+peanut butter,other,45
+jam,other,42
+jelly other,other,40
+baking powder,other,38
+baking soda,other,35
+yeast,other,32
+vanilla extract,other,30
+cornstarch,other,28
+oatmeal,other,25
+cereal,other,150
+quinoa,other,40
+couscous,other,35
+lentils,other,30
+chickpeas,other,25
+black beans,other,40
+kidney beans,other,35
+marinara sauce,other,50
+pesto,other,45
+alfredo sauce,other,40
+bbq sauce,other,35
+hot sauce,other,30
+sriracha,other,25
+teriyaki sauce,other,20
+soy sauce,other,40
+fish sauce,other,15
+oyster sauce,other,12
+worcestershire,other,10
+cooking spray,other,20
+coconut oil,other,25
+sesame oil,other,15
+balsamic vinegar,other,30
+apple cider vinegar,other,25
+pickles,other,40
+olives,other,35
+capers,other,10
+relish,other,15
+jalapenos,other,20
+dried oregano,other,25
+dried basil,other,20
+dried thyme,other,15
+dried rosemary,other,10
+chili powder,other,30
+cumin,other,25
+paprika,other,20
+cinnamon,other,35
+turmeric,other,15
+curry powder,other,20
+garlic powder,other,40
+onion powder,other,35
+bay leaves,other,10
+cloves,other,5
+nutmeg,other,8
+allspice,other,5
+cardamom,other,10
+coriander,other,12
+fennel seeds,other,10
+poppy seeds,other,8
+sesame seeds,other,15
+chia seeds,other,20
+flax seeds,other,15
+hemp seeds,other,10
+bulk oats,other,40
+boxed pasta,other,100
+spaghetti,other,120
+penne,other,110
+fusilli,other,100
+rigatoni,other,90
+lasagna noodles,other,80
+macaroni,other,70
+cous cous,other,30
+bulgur,other,20
+barley,other,15
+white rice,other,100
+brown rice,other,90
+jasmine rice,other,80
+basmati rice,other,75
+wild rice,other,40
+risotto rice,other,35
+udon noodles,other,30
+ramen noodles,other,150
+soba noodles,other,40
+rice noodles,other,50
+rice vermicelli,other,35
+cellophane noodles,other,20
+pappardelle,other,30
+fettuccine,other,50
+linguine,other,45
+gnocchi,other,30
+egg noodles,other,40
+tortellini,other,35
+ravioli,other,30
+pizza dough,other,50
+pie crust,other,40
+puff pastry,other,30
+phyllo dough,other,20
+wonton wrappers,other,15
+spring roll wrappers,other,10
+nori sheets,other,15
+rice paper,other,12
+tapioca pearls,other,10
+agar agar,other,5
+gelatin sheets,other,8
+pectin,other,10
+citric acid,other,8
+msg,other,15
+liquid aminos,other,20
+coconut aminos,other,15
+tahini,other,25
+miso paste,other,20
+gochujang,other,25
+harissa,other,15
+curry paste,other,25
+tamarind paste,other,12
+anchovy paste,other,10
+tomato paste,other,50
+tomato sauce,other,60
+crushed tomatoes,other,55
+diced tomatoes,other,45
+stewed tomatoes,other,35
+tomato puree,other,30
+ketchup,other,100
+mustard,other,80
+mayo,other,90
+relish,other,30
+tartar sauce,other,20
+horseradish,other,15
+wasabi,other,12
+guacamole,other,50
+salsa,other,60
+hummus,other,55
+baba ganoush,other,20
+tzatziki,other,25
+tapenade,other,15
+chimichurri,other,10
+pesto,other,40
+harissa,other,15
+sriracha,other,50
+sambal oelek,other,20
+gochujang,other,30
+hoisin,other,25
+plum sauce,other,15
+sweet chili sauce,other,30
+teriyaki,other,40
+ponzu,other,15
+eel sauce,other,10
+nuoc cham,other,12
+fish sauce,other,30
+shrimp paste,other,10
+miso,other,25
+mirin,other,20
+sake cooking,other,15
+rice vinegar,other,30
+black vinegar,other,15
+red wine vinegar,other,35
+white wine vinegar,other,30
+balsamic,other,45
+sherry vinegar,other,15
+apple cider vinegar,other,40
+tarragon vinegar,other,10
+malt vinegar,other,15
+distilled white vinegar,other,50
+lemon juice,other,60
+lime juice,other,55
+orange juice cooking,other,30
+pineapple juice cooking,other,20
+pomegranate juice cooking,other,10
+grape juice cooking,other,15
+apple cider,other,30
+verjuice,other,5
+marshmallows,other,20
+chocolate chips,other,50
+sprinkles,other,15
+food coloring,other,10
+vanilla,other,40
+almond extract,other,15
+lemon extract,other,10
+peppermint extract,other,12
+rum extract,other,5
+brandy extract,other,4
+orange extract,other,6
+coconut extract,other,8
+banana extract,other,5
+butter extract,other,10
+maple extract,other,15
+coffee extract,other,10
+matcha powder cooking,other,20
+cacao powder,other,40
+cocoa powder cooking,other,50
+carob powder,other,10
+powdered sugar,other,60
+brown sugar,other,70
+turbinado sugar,other,30
+sugar cubes,other,15
+honey cooking,other,50
+maple syrup cooking,other,45
+agave syrup,other,35
+molasses,other,20
+corn syrup light,other,30
+corn syrup dark,other,20
+sorghum,other,10
+cane syrup,other,15
+golden syrup,other,12
+date syrup,other,20
+rice syrup,other,15
+malt syrup,other,10
+glucose syrup,other,20
+invert sugar,other,5
+liquid sugar,other,10
+stevia,other,25
+monk fruit sugar,other,20
+erythritol,other,15
+xylitol,other,12
+saccharin,other,8
+aspartame,other,10
+sucralose,other,15
+pectin,other,10
+gelatin powder,other,25
+agar flakes,other,12
+xanthan gum,other,15
+guar gum,other,10
+locust bean gum,other,8
+gum arabic,other,5
+tragacanth,other,2
+carrageenan,other,6
+alginate,other,5
+lecithin,other,12
+yeast active,other,30
+yeast nutritional,other,40
+baking soda cooking,other,50
+baking powder cooking,other,45
+cream of tartar cooking,other,25
+cornstarch cooking,other,50
+tapioca starch cooking,other,30
+potato starch cooking,other,25
+rice starch,other,15
+arrowroot,other,20
+kuzu,other,5
+sago,other,10
+cassava starch,other,15
+wheat starch,other,10
+pea starch,other,8
+mung bean starch,other,12
+pectin fruit,other,15
+citric acid cooking,other,10
+malic acid,other,4
+tartaric acid,other,5
+ascorbic acid,other,12
+msg cooking,other,20
+monosodium glutamate cooking,other,15
+potassium chloride,other,10
+calcium chloride,other,8
+epsom salts,other,15
+sea salt,other,50
+pink salt,other,40
+kosher salt cooking,other,60
+table salt,other,100
+iodized salt,other,80
+pickling salt,other,20
+curing salt,other,10
+smoked salt cooking,other,15
+truffle salt cooking,other,12
+garlic salt,other,40
+onion salt,other,35
+celery salt,other,25
+lemon pepper,other,30
+steak seasoning,other,40
+poultry seasoning,other,35
+taco seasoning cooking,other,50
+chili seasoning,other,45
+jerk seasoning,other,20
+cajun seasoning,other,30
+creole seasoning,other,25
+old bay,other,30
+adobo,other,35
+sazon,other,30
+garam masala cooking,other,25
+curry cooking,other,30
+tandoori,other,20
+chaat masala,other,15
+panch phoron,other,10
+five spice,other,20
+shichimi,other,15
+wasabi powder cooking,other,12
+mustard powder,other,40
+ginger powder,other,50
+turmeric powder cooking,other,45
+coriander powder,other,40
+cumin powder,other,50
+fennel powder,other,20
+fenugreek,other,15
+asafetida,other,12
+cardamom powder,other,25
+cinnamon powder,other,60
+nutmeg powder,other,30
+mace powder,other,10
+clove powder,other,20
+allspice powder,other,15
+star anise powder,other,12
+anise powder,other,10
+liquorice powder,other,8
+saffron powder,other,5
+vanilla powder,other,15
+sumac,other,12
+za'atar,other,15
+dukkah,other,10
+ras el hanout,other,12
+baharat,other,8
+harissa powder,other,15
+berbere,other,10
+grains of paradise,other,5
+long pepper,other,8
+white pepper powder,other,30
+black pepper coarse,other,50
+black pepper fine,other,60
+pink pepper whole,other,15
+green pepper whole,other,10
+sichuan berry,other,20
+sansho powder,other,10
+aleppo pepper flakes,other,15
+urfa biber,other,12
+marash,other,10
+silk chili flakes,other,8
+korean red pepper,other,30
+chipotle powder,other,25
+ancho powder,other,20
+guajillo powder,other,15
+pasilla powder,other,12
+mulato powder,other,10
+cascabel powder,other,8
+arbol powder,other,15
+habanero powder,other,12
+scotch bonnet powder,other,10
+ghost pepper powder,other,5
+reaper powder,other,2
+cayenne powder,other,40
+paprika sweet powder,other,50
+paprika hot powder,other,35
+paprika smoked powder,other,45
+chili powder blend,other,60
+red pepper flakes cooking,other,55
+garlic flakes cooking,other,30
+onion flakes cooking,other,35
+shallot flakes,other,15
+leek flakes,other,10
+celery flakes,other,15
+carrot flakes,other,12
+mushroom flakes,other,20
+tomato flakes,other,18
+spinach flakes,other,15
+kale flakes,other,12
+broccoli flakes,other,10
+cabbage flakes,other,8
+bell pepper flakes,other,15
+jalapeno flakes,other,20
+habanero flakes,other,10
+wasabi flakes,other,12
+mustard flakes,other,15
+ginger flakes,other,20
+turmeric flakes,other,15
+coriander flakes,other,25
+cumin flakes,other,10
+fennel flakes,other,15
+anise flakes,other,8
+star anise whole,other,15
+anise whole,other,12
+liquorice whole,other,5
+saffron threads,other,10
+vanilla pod,other,15
+tonka whole,other,2
+mahlab whole,other,4
+grains of paradise whole,other,6
+cubeb whole,other,5
+long pepper whole,other,8
+white pepper whole,other,20
+black pepper whole,other,60
+green pepper whole,other,12
+pink pepper whole,other,15
+sichuan whole,other,25
+sansho whole,other,6
+aleppo whole,other,8
+urfa whole,other,6
+marash whole,other,5
+silk whole,other,4
+korean whole,other,15
+chipotle whole,other,20
+ancho whole,other,25
+guajillo whole,other,20
+pasilla whole,other,15
+mulato whole,other,12
+cascabel whole,other,10
+arbol whole,other,15
+habanero whole,other,10
+scotch bonnet whole,other,8
+ghost pepper whole,other,5
+reaper whole,other,2
+cayenne pod,other,20
+bird's eye chili,other,30
+thai chili,other,35
+serrano,other,40
+jalapeno,other,60
+habanero,other,30
+poblano,other,25
+anaheim,other,20
+bell pepper green,other,80
+bell pepper red,other,75
+bell pepper yellow,other,70
+bell pepper orange,other,65
+shishito,other,15
+padron,other,12
+sweet snacks,snacks,50
+salty snacks,snacks,50
+crunchy snacks,snacks,50
+soft snacks,snacks,50
+cold snacks,snacks,50
+hot snacks,snacks,50
+healthy snacks,snacks,50
+junk snacks,snacks,50
+morning snacks,snacks,50
+afternoon snacks,snacks,50
+evening snacks,snacks,50
+midnight snacks,snacks,50
+party snacks,snacks,50
+travel snacks,snacks,50
+school snacks,snacks,50
+office snacks,snacks,50
+gym snacks,snacks,50
+hiking snacks,snacks,50
+movie snacks,snacks,50
+gaming snacks,snacks,50
+picnic snacks,snacks,50
+beach snacks,snacks,50
+road trip snacks,snacks,50
+holiday snacks,snacks,50
+traditional snacks,snacks,50
+modern snacks,snacks,50
+fusion snacks,snacks,50
+gourmet snacks,snacks,50
+cheap snacks,snacks,50
+expensive snacks,snacks,50
+rare snacks,snacks,50
+imported snacks,snacks,50
+local snacks,snacks,50
+organic snacks,snacks,50
+natural snacks,snacks,50
+vegan snacks,snacks,50
+vegetarian snacks,snacks,50
+gluten free snacks,snacks,50
+dairy free snacks,snacks,50
+sugar free snacks,snacks,50
+low carb snacks,snacks,50
+keto snacks,snacks,50
+paleo snacks,snacks,50
+whole30 snacks,snacks,50
+halal snacks,snacks,50
+kosher snacks,snacks,50
+nut free snacks,snacks,50
+soy free snacks,snacks,50
+egg free snacks,snacks,50
+wheat free snacks,snacks,50
+sesame free snacks,snacks,50
+shellfish free snacks,snacks,50
+fish free snacks,snacks,50
+meat free snacks,snacks,50
+poultry free snacks,snacks,50
+pork free snacks,snacks,50
+beef free snacks,snacks,50
+alcohol free snacks,snacks,50
+caffeine free snacks,snacks,50
+additive free snacks,snacks,50
+preservative free snacks,snacks,50
+artificial free snacks,snacks,50
+GMO free snacks,snacks,50
+fair trade snacks,snacks,50
+sustainable snacks,snacks,50
+ethical snacks,snacks,50
+local snacks again,snacks,50
+tofu blocks,other,40
+tofu firm,other,45
+tofu silken,other,35
+tofu smoked,other,20
+tofu fried,other,15
+tempeh blocks,other,25
+tempeh strips,other,20
+seitan chunks,other,18
+seitan slices,other,15
+tofu again,other,40
+tempeh again,other,25
+seitan again,other,18
+quorn,other,20
+beyond meat,other,30
+impossible meat,other,35
+veggie burger,other,45
+veggie sausage,other,30
+veggie bacon,other,25
+vegan cheese,other,35
+vegan milk,other,50
+vegan butter,other,30
+vegan yogurt,other,25
+vegan cream,other,20
+vegan eggs,other,15
+vegan honey,other,10
+vegan mayo,other,20
+vegan dressing,other,25
+vegan sauce,other,30
+vegan snack,other,50
+vegan meal,other,40
+vegan protein,other,35
+vegan vitamins,other,20
+vegan health,other,15
+vegan life,other,10
+tofu strips,other,20
+tofu cubes,other,25
+tofu skin,other,15
+tofu pasta,other,12
+tofu spread,other,10
+tofu dessert,other,8
+tofu jerky,other,5
+tofu snacks,other,12
+tofu bits,other,10
+tofu pieces,other,15
+tofu nuggets,other,12
+tofu burgers,other,10
+tofu sausages,other,8
+tofu balls,other,6
+tofu patties,other,10
+tofu steaks,other,8
+tofu loaf,other,5
+tofu roast,other,4
+tofu turkey,other,3
+tofu ham,other,2
+tofu bacon,other,5
+tofu scrambled,other,10
+tofu omelette,other,8
+tofu soup,other,15
+tofu stew,other,12
+tofu curry,other,10
+tofu stir fry,other,15
+tofu salad,other,12
+tofu bowl,other,10
+tofu wrap,other,8
+tofu sandwich,other,10
+tofu taco,other,12
+tofu burrito,other,10
+tofu pizza,other,8
+tofu pasta again,other,10
+tofu rice,other,12
+tofu quinoa,other,8
+tofu grains,other,10
+tofu veggie,other,15
+tofu fruit,other,5
+tofu sweet,other,10
+tofu salty,other,12
+tofu spicy,other,15
+tofu sour,other,8
+tofu bitter,other,4
+tofu umami,other,10
+tofu rich,other,12
+tofu light,other,15
+tofu fresh,other,20
+tofu cooked,other,18
+tofu raw,other,10
+tofu frozen,other,15
+tofu canned,other,12
+tofu dried,other,10
+tofu fermented,other,8
+tofu pickled,other,6
+tofu marinated,other,15
+tofu seasoned,other,18
+tofu plain,other,30
+tofu organic,other,25
+tofu natural,other,20
+tofu craft,other,10
+tofu artisan,other,8
+tofu local,other,12
+tofu global,other,10
+tofu asian,other,20
+tofu chinese,other,15
+tofu japanese,other,12
+tofu korean,other,10
+tofu indian,other,8
+tofu thai,other,8
+tofu vietnamese,other,6
+tofu western,other,10
+tofu fusion,other,8
+tofu master,other,5
+tofu expert,other,4
+tofu love,other,10
+tofu life,other,12
+tofu healthy,other,15
+tofu strong,other,10
+tofu fit,other,8
+tofu energy,other,10
+tofu power,other,12
+tofu pure,other,15
+tofu 1,other,10
+tofu 2,other,10
+tofu 3,other,10
+tofu 4,other,10
+tofu 5,other,10
+tofu 6,other,10
+tofu 7,other,10
+tofu 8,other,10
+tofu 9,other,10
+tofu 10,other,10
+tofu 11,other,10
+tofu 12,other,10
+tofu 13,other,10
+tofu 14,other,10
+tofu 15,other,10
+tofu 16,other,10
+tofu 17,other,10
+tofu 18,other,10
+tofu 19,other,10
+tofu 20,other,10
+tofu 21,other,10
+tofu 22,other,10
+tofu 23,other,10
+tofu 24,other,10
+tofu 25,other,10
+tofu 26,other,10
+tofu 27,other,10
+tofu 28,other,10
+tofu 29,other,10
+tofu 30,other,10
+tofu 31,other,10
+tofu 32,other,10
+tofu 33,other,10
+tofu 34,other,10
+tofu 35,other,10
+tofu 36,other,10
+tofu 37,other,10
+tofu 38,other,10
+tofu 39,other,10
+tofu 40,other,10
+tofu 41,other,10
+tofu 42,other,10
+tofu 43,other,10
+tofu 44,other,10
+tofu 45,other,10
+tofu 46,other,10
+tofu 47,other,10
+tofu 48,other,10
+tofu 49,other,10
+tofu 50,other,10
+tofu 51,other,10
+tofu 52,other,10
+tofu 53,other,10
+tofu 54,other,10
+tofu 55,other,10
+tofu 56,other,10
+tofu 57,other,10
+tofu 58,other,10
+tofu 59,other,10
+tofu 60,other,10
+tofu 61,other,10
+tofu 62,other,10
+tofu 63,other,10
+tofu 64,other,10
+tofu 65,other,10
+tofu 66,other,10
+tofu 67,other,10
+tofu 68,other,10
+tofu 69,other,10
+tofu 70,other,10
+tofu 71,other,10
+tofu 72,other,10
+tofu 73,other,10
+tofu 74,other,10
+tofu 75,other,10
+tofu 76,other,10
+tofu 77,other,10
+tofu 78,other,10
+tofu 79,other,10
+tofu 80,other,10
+tofu 81,other,10
+tofu 82,other,10
+tofu 83,other,10
+tofu 84,other,10
+tofu 85,other,10
+tofu 86,other,10
+tofu 87,other,10
+tofu 88,other,10
+tofu 89,other,10
+tofu 90,other,10
+tofu 91,other,10
+tofu 92,other,10
+tofu 93,other,10
+tofu 94,other,10
+tofu 95,other,10
+tofu 96,other,10
+tofu 97,other,10
+tofu 98,other,10
+tofu 99,other,10
+tofu 100,other,10
+tofu final,other,10
+actually other category,other,10
+toothpaste,other,40
+toothbrush,other,30
+dental floss,other,20
+mouthwash,other,25
+soap,other,40
+shampoo,other,45
+conditioner,other,40
+body wash,other,35
+lotion,other,30
+razor,other,25
+shaving cream,other,20
+deodorant,other,35
+sunscreen,other,20
+toilet paper,other,60
+paper towels,other,50
+napkins,other,30
+tissues,other,35
+trash bags,other,40
+ziploc,other,35
+aluminum foil,other,30
+plastic wrap,other,25
+dish soap cooking,other,35
+detergent,other,40
+fabric softener,other,30
+bleach,other,20
+glass cleaner,other,15
+all purpose cleaner,other,25
+sponge,other,20
+batteries,other,25
+light bulbs,other,15
+dog food,other,45
+cat food,other,40
+pet treats,other,30
+diapers,other,40
+baby wipes,other,35
+baby formula,other,30
+baby food jar,other,25
+medicine,other,35
+vitamins,other,30
+aspirin,other,20
+bandages,other,15
+first aid,other,20
+charcoal,other,15
+matches,other,10
+lighter,other,15
+firewood,other,5
+batteries aa,other,20
+batteries aaa,other,20
+shampoo hair,other,30
+soap bar,other,25
+liquid soap,other,30
+hand sanitizer,other,35
+cleaning wipes,other,40
+multipurpose cleaner cooking,other,25
+floor cleaner,other,20
+toilet cleaner,other,25
+drain cleaner,other,10
+silver polish,other,5
+wood polish,other,8
+leather cleaner,other,6
+stain remover,other,15
+laundry pods,other,40
+dishwasher pods,other,35
+scouring pads,other,15
+steel wool,other,10
+rubber gloves,other,20
+oven cleaner,other,12
+air freshener,other,25
+candles,other,25
+incense,other,10
+essential oils,other,15
+diffuser,other,12
+humidifier,other,10
+dehumidifier,other,5
+vacuum bags,other,10
+mop,other,15
+broom,other,12
+dustpan,other,10
+bucket,other,15
+plunger,other,8
+toilet brush,other,12
+towels,other,25
+washcloths,other,20
+bath mat,other,15
+shower curtain,other,15
+hooks,other,10
+shelves,other,8
+bins,other,20
+storage boxes,other,25
+organizers,other,18
+hangers,other,25
+shoe rack,other,10
+rugs,other,15
+pillows,other,20
+blankets,other,25
+sheets,other,30
+pillowcases,other,25
+mattress pad,other,15
+duvet,other,10
+comforter,other,12
+curtains,other,20
+blinds,other,15
+rods,other,10
+clocks,other,15
+frames,other,20
+mirrors,other,15
+vases,other,12
+planters,other,15
+pots,other,25
+pans,other,25
+skillet,other,20
+wok,other,15
+griddle,other,12
+saucepan,other,20
+stockpot,other,15
+dutch oven,other,18
+casserole dish,other,20
+baking sheet,other,25
+roasting pan,other,15
+loaf pan,other,12
+cake pan,other,15
+pie dish,other,12
+muffin tin,other,15
+mixing bowl,other,20
+measuring cup,other,15
+measuring spoon,other,12
+spatula cooking,other,20
+whisk cooking,other,15
+ladle,other,18
+tongs,other,18
+peeler,other,15
+grater,other,15
+colander cooking,other,20
+strainer,other,15
+sifter,other,10
+rolling pin cooking,other,12
+cutting board cooking,other,25
+knife,other,30
+scissors,other,20
+can opener cooking,other,18
+bottle opener cooking,other,15
+corkscrew cooking,other,12
+timer,other,10
+thermometer,other,15
+scale cooking,other,12
+foil,other,40
+plastic bags,other,45
+bags,other,50
+wrappers,other,30
+containers,other,40
+tupperware,other,35
+glass jars,other,25
+mason jars,other,20
+bottles,other,30
+cans,other,35
+tins,other,20
+boxes,other,40
+cartons,other,35
+jugs,other,15
+vials,other,5
+pipettes,other,2
+beakers,other,2
+flasks,other,3
+test tubes,other,1
+thermometers,other,5
+clocks,other,10
+watches,other,5
+jewelry,other,8
+rings,other,10
+necklaces,other,8
+bracelets,other,10
+earrings,other,12
+watches,other,10
+wallets,other,15
+purses,other,20
+handbags,other,25
+backpacks,other,30
+suitcases,other,20
+luggage,other,25
+briefcases,other,10
+umbrellas,other,15
+canes,other,5
+glasses,other,25
+sunglasses,other,20
+contacts,other,15
+solution,other,20
+drops,other,15
+sprays,other,20
+creams,other,25
+gels,other,20
+salves,other,10
+ointments,other,15
+lotions,other,30
+balms,other,15
+powders,other,20
+liquids,other,30
+solids,other,5
+gas,other,2
+plasma,other,1
+matter,other,10
+energy,other,5
+power,other,15
+strength,other,10
+health,other,20
+wellness,other,25
+fitness,other,30
+beauty,other,35
+care,other,40
+love,other,50
+life,other,60
+everything,other,100
+final other,other,10
+stuff,other,20
+things,other,30
+items,other,40
+products,other,50
+goods,other,60
+shopping,other,70
+smartcart,other,80
+ai,other,90
+assist,other,100
+finish,other,10
+done,other,20
+complete,other,30
+ready,other,40
+go,other,50
+now,other,60
+yes,other,70
+no,other,10
+maybe,other,5
+possible,other,10
+correct,other,20
+stable,other,30
+fast,other,40
+smart,other,50
+cool,other,60
+nice,other,70
+great,other,80
+awesome,other,90
+perfect,other,100
+end,other,10
+fin,other,5
+eof,other,1

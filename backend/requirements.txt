@@ -1,0 +1,27 @@
+flask>=3.0.0
+flask-cors>=4.0.0
+sqlalchemy>=2.0.0
+redis>=5.0.0
+
+# ML Frameworks (CPU-only versions recommended for Windows without CUDA)
+torch==2.0.1
+torchvision==0.15.2
+torchaudio==2.0.2
+--index-url https://download.pytorch.org/whl/cpu
+
+transformers
+sentencepiece
+openai-whisper
+
+# Data Science
+scikit-learn
+lightgbm
+pandas
+numpy<2.0.0
+mlxtend
+gensim
+shap
+
+# NLP
+nltk
+spacy

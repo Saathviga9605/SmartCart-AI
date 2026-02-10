@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Classic Pancakes",
+    "ingredients": ["milk", "eggs", "flour", "sugar", "butter"],
+    "rating": 4.6,
+    "prep_time_mins": 15
+  },
+  {
+    "name": "Scrambled Eggs",
+    "ingredients": ["eggs", "butter", "salt", "pepper"],
+    "rating": 4.4,
+    "prep_time_mins": 8
+  },
+  {
+    "name": "Tomato Pasta",
+    "ingredients": ["pasta", "tomato sauce", "garlic", "olive oil", "salt"],
+    "rating": 4.5,
+    "prep_time_mins": 25
+  },
+  {
+    "name": "Chicken Rice Bowl",
+    "ingredients": ["chicken breast", "rice", "soy sauce", "garlic", "onions"],
+    "rating": 4.3,
+    "prep_time_mins": 30
+  },
+  {
+    "name": "Greek Yogurt Parfait",
+    "ingredients": ["yogurt", "strawberries", "honey", "granola"],
+    "rating": 4.2,
+    "prep_time_mins": 5
+  },
+  {
+    "name": "Grilled Cheese Sandwich",
+    "ingredients": ["bread", "cheese", "butter"],
+    "rating": 4.1,
+    "prep_time_mins": 10
+  },
+  {
+    "name": "Simple Salad",
+    "ingredients": ["lettuce", "tomatoes", "olive oil", "salt", "onions"],
+    "rating": 4.0,
+    "prep_time_mins": 10
+  },
+  {
+    "name": "Banana Smoothie",
+    "ingredients": ["bananas", "milk", "honey"],
+    "rating": 4.2,
+    "prep_time_mins": 5
+  },
+  {
+    "name": "Avocado Toast",
+    "ingredients": ["bread", "avocado", "salt", "black pepper", "lemon juice"],
+    "rating": 4.7,
+    "prep_time_mins": 5
+  },
+  {
+    "name": "Berry Smoothie Bowl",
+    "ingredients": ["blueberries", "strawberries", "yogurt", "granola", "honey"],
+    "rating": 4.5,
+    "prep_time_mins": 7
+  },
+  {
+    "name": "Oatmeal with Blueberries",
+    "ingredients": ["oatmeal", "milk", "blueberries", "honey", "cinnamon"],
+    "rating": 4.4,
+    "prep_time_mins": 10
+  },
+  {
+    "name": "Fresh Fruit Salad",
+    "ingredients": ["apples", "bananas", "grapes", "strawberries", "pineapples", "mangoes"],
+    "rating": 4.8,
+    "prep_time_mins": 15
+  },
+  {
+    "name": "Caprese Salad",
+    "ingredients": ["tomatoes", "mozzarella cheese", "basil", "olive oil", "balsamic vinegar"],
+    "rating": 4.6,
+    "prep_time_mins": 10
+  },
+  {
+    "name": "Roasted Vegetables",
+    "ingredients": ["carrots", "broccoli", "bell peppers", "onions", "potatoes", "olive oil", "rosemary"],
+    "rating": 4.3,
+    "prep_time_mins": 45
+  },
+  {
+    "name": "Beef Stir Fry",
+    "ingredients": ["beef mince", "broccoli", "bell peppers", "soy sauce", "ginger", "garlic", "rice"],
+    "rating": 4.5,
+    "prep_time_mins": 25
+  },
+  {
+    "name": "Baked Salmon",
+    "ingredients": ["salmon", "lemon juice", "garlic", "butter", "asparagus"],
+    "rating": 4.9,
+    "prep_time_mins": 20
+  },
+  {
+    "name": "Mushroom Omelette",
+    "ingredients": ["eggs", "mushrooms", "cheese", "onions", "butter"],
+    "rating": 4.2,
+    "prep_time_mins": 12
+  },
+  {
+    "name": "Tuna Salad Sandwich",
+    "ingredients": ["tuna", "mayonnaise", "bread", "celery", "onions", "lettuce"],
+    "rating": 4.0,
+    "prep_time_mins": 10
+  },
+  {
+    "name": "Spaghetti Carbonara",
+    "ingredients": ["pasta", "eggs", "bacon", "parmesan cheese", "black pepper"],
+    "rating": 4.6,
+    "prep_time_mins": 15
+  },
+  {
+    "name": "Vegetable Soup",
+    "ingredients": ["onions", "carrots", "celery", "potatoes", "tomatoes", "vegetable broth", "thyme"],
+    "rating": 4.1,
+    "prep_time_mins": 40
+  },
+  {
+    "name": "Caesar Salad",
+    "ingredients": ["lettuce", "parmesan cheese", "croutons", "chicken breast", "lemon juice"],
+    "rating": 4.5,
+    "prep_time_mins": 15
+  },
+  {
+    "name": "Beef Tacos",
+    "ingredients": ["beef mince", "taco shells", "lettuce", "tomatoes", "cheese", "salsa"],
+    "rating": 4.7,
+    "prep_time_mins": 20
+  },
+  {
+    "name": "Quinoa Salad",
+    "ingredients": ["quinoa", "cucumber", "cherry", "feta cheese", "olive oil", "lemon juice", "parsley"],
+    "rating": 4.4,
+    "prep_time_mins": 25
+  },
+  {
+    "name": "Grilled Pork Chops",
+    "ingredients": ["pork chops", "garlic", "rosemary", "olive oil", "green beans"],
+    "rating": 4.3,
+    "prep_time_mins": 30
+  },
+  {
+    "name": "Turkey Club Sandwich",
+    "ingredients": ["bread", "turkey deli meat", "bacon", "lettuce", "tomatoes", "mayonnaise"],
+    "rating": 4.2,
+    "prep_time_mins": 10
+  },
+  {
+    "name": "Shrimp Scampi",
+    "ingredients": ["shrimp", "pasta", "garlic", "butter", "lemon juice", "white wine", "parsley"],
+    "rating": 4.8,
+    "prep_time_mins": 20
+  },
+  {
+    "name": "Lentil Stew",
+    "ingredients": ["lentils", "carrots", "onions", "celery", "garlic", "vegetable broth", "cumin"],
+    "rating": 4.2,
+    "prep_time_mins": 45
+  },
+  {
+    "name": "Spinach and Ricotta Pasta",
+    "ingredients": ["pasta", "spinach", "ricotta", "parmesan cheese", "garlic", "nutmeg"],
+    "rating": 4.5,
+    "prep_time_mins": 20
+  },
+  {
+    "name": "Hummus Plate",
+    "ingredients": ["hummus", "pita", "carrots", "cucumber", "olives"],
+    "rating": 4.4,
+    "prep_time_mins": 5
+  },
+  {
+    "name": "French Toast",
+    "ingredients": ["bread", "eggs", "milk", "cinnamon", "vanilla extract", "maple syrup"],
+    "rating": 4.6,
+    "prep_time_mins": 15
+  }
+]
