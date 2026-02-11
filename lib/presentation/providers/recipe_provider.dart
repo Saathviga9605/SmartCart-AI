@@ -29,4 +29,33 @@ class RecipeProvider with ChangeNotifier {
       notifyListeners();
     }
   }
+
+  Future<List<Map<String, dynamic>>> getRecipeSuggestions(List<String> ingredients) async {
+    _isLoading = true;
+    notifyListeners();
+
+    try {
+      final result = await _apiService.getRecipeRecommendations(ingredients);
+      final recommendations = result['recommendations'] as List<dynamic>? ?? [];
+      
+      // Convert the recommendations to the expected format
+      return recommendations.map((recipe) {
+        return {
+          'title': recipe['title'] ?? 'Untitled Recipe',
+          'ingredients': (recipe['ingredients'] as List<dynamic>?)?.cast<String>() ?? [],
+          'matchPercentage': (recipe['match_percentage'] as num?)?.toInt() ?? 0,
+          'missingIngredients': (recipe['missing_ingredients'] as List<dynamic>?)?.cast<String>() ?? [],
+          'estimatedTime': recipe['estimated_time'] ?? '30 mins',
+          'difficulty': recipe['difficulty'] ?? 'Medium',
+          'cuisine': recipe['cuisine'] ?? 'International',
+        };
+      }).toList();
+    } catch (e) {
+      debugPrint('Error fetching recipe suggestions: $e');
+      return [];
+    } finally {
+      _isLoading = false;
+      notifyListeners();
+    }
+  }
 }

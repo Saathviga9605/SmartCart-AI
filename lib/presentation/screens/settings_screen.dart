@@ -6,6 +6,7 @@ import '../../core/theme/app_theme.dart';
 import '../../core/constants/app_constants.dart';
 import '../providers/theme_provider.dart';
 import '../providers/grocery_provider.dart';
+import '../../data/datasources/hive_service.dart';
 
 /// Settings Screen - App configuration and preferences
 /// Theme switching, ML toggles, and app information
@@ -54,6 +55,177 @@ class SettingsScreen extends StatelessWidget {
                           ? Icons.dark_mode
                           : Icons.light_mode,
                       color: AppColors.primaryMain,
+                    ),
+                  );
+                },
+              ),
+            ],
+          ),
+          
+          const SizedBox(height: 24),
+          
+          // Notifications Section
+          _buildSectionHeader('Notifications & Reminders'),
+          _buildSettingsCard(
+            children: [
+              Consumer<HiveService>(
+                builder: (context, hive, child) {
+                  final reminderEnabled = hive.getSetting<bool>('reminder_enabled', defaultValue: true) ?? true;
+                  return SwitchListTile(
+                    title: Text(
+                      'Shopping Reminders',
+                      style: AppTextStyles.bodyLarge.copyWith(
+                        color: AppColors.textPrimary,
+                      ),
+                    ),
+                    subtitle: Text(
+                      'Get reminded about pending items',
+                      style: AppTextStyles.bodySmall.copyWith(
+                        color: AppColors.textSecondary,
+                      ),
+                    ),
+                    value: reminderEnabled,
+                    onChanged: (value) {
+                      hive.saveSetting('reminder_enabled', value);
+                    },
+                    secondary: const Icon(
+                      Icons.notifications_active,
+                      color: AppColors.info,
+                    ),
+                  );
+                },
+              ),
+              const Divider(),
+              Consumer<HiveService>(
+                builder: (context, hive, child) {
+                  return ListTile(
+                    leading: const Icon(
+                      Icons.history,
+                      color: AppColors.warning,
+                    ),
+                    title: Text(
+                      'Clear History',
+                      style: AppTextStyles.bodyLarge.copyWith(
+                        color: AppColors.textPrimary,
+                      ),
+                    ),
+                    subtitle: Text(
+                      '${hive.getHistory().length} shopping trips',
+                      style: AppTextStyles.bodySmall.copyWith(
+                        color: AppColors.textSecondary,
+                      ),
+                    ),
+                    onTap: () => _showClearHistoryConfirmation(context, hive),
+                  );
+                },
+              ),
+            ],
+          ),
+          
+          const SizedBox(height: 24),
+          
+          // Privacy & Storage
+          _buildSectionHeader('Privacy & Storage'),
+          _buildSettingsCard(
+            children: [
+              Consumer<HiveService>(
+                builder: (context, hive, child) {
+                  final analytics = hive.getSetting<bool>('analytics_enabled', defaultValue: true) ?? true;
+                  return SwitchListTile(
+                    title: Text(
+                      'Usage Analytics',
+                      style: AppTextStyles.bodyLarge.copyWith(
+                        color: AppColors.textPrimary,
+                      ),
+                    ),
+                    subtitle: Text(
+                      'Help improve the app',
+                      style: AppTextStyles.bodySmall.copyWith(
+                        color: AppColors.textSecondary,
+                      ),
+                    ),
+                    value: analytics,
+                    onChanged: (value) {
+                      hive.saveSetting('analytics_enabled', value);
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text(value 
+                            ? 'Analytics enabled' 
+                            : 'Analytics disabled'),
+                        ),
+                      );
+                    },
+                    secondary: const Icon(
+                      Icons.analytics,
+                      color: AppColors.info,
+                    ),
+                  );
+                },
+              ),
+              const Divider(),
+              ListTile(
+                leading: const Icon(
+                  Icons.privacy_tip_outlined,
+                  color: AppColors.accentMain,
+                ),
+                title: Text(
+                  'Privacy Policy',
+                  style: AppTextStyles.bodyLarge.copyWith(
+                    color: AppColors.textPrimary,
+                  ),
+                ),
+                trailing: const Icon(Icons.open_in_new, size: 20),
+                onTap: () {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Privacy policy coming soon')),
+                  );
+                },
+              ),
+              const Divider(),
+              ListTile(
+                leading: const Icon(
+                  Icons.alarm,
+                  color: AppColors.warning,
+                ),
+                title: Text(
+                  'Reminder Time',
+                  style: AppTextStyles.bodyLarge.copyWith(
+                    color: AppColors.textPrimary,
+                  ),
+                ),
+                subtitle: Text(
+                  'Set your preferred reminder time',
+                  style: AppTextStyles.bodySmall.copyWith(
+                    color: AppColors.textSecondary,
+                  ),
+                ),
+                trailing: const Icon(Icons.chevron_right),
+                onTap: () => _showReminderTimePicker(context),
+              ),
+              const Divider(),
+              Consumer<HiveService>(
+                builder: (context, hive, child) {
+                  final priceAlerts = hive.getSetting<bool>('price_alerts', defaultValue: false) ?? false;
+                  return SwitchListTile(
+                    title: Text(
+                      'Price Alerts',
+                      style: AppTextStyles.bodyLarge.copyWith(
+                        color: AppColors.textPrimary,
+                      ),
+                    ),
+                    subtitle: Text(
+                      'Notify about price drops',
+                      style: AppTextStyles.bodySmall.copyWith(
+                        color: AppColors.textSecondary,
+                      ),
+                    ),
+                    value: priceAlerts,
+                    onChanged: (value) {
+                      hive.saveSetting('price_alerts', value);
+                    },
+                    secondary: const Icon(
+                      Icons.trending_down,
+                      color: AppColors.success,
                     ),
                   );
                 },
@@ -263,6 +435,89 @@ class SettingsScreen extends StatelessWidget {
               backgroundColor: AppColors.error,
             ),
             child: const Text('Clear All'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _showReminderTimePicker(BuildContext context) {
+    final hive = context.read<HiveService>();
+    final currentHour = hive.getSetting<int>('reminder_hour', defaultValue: 18) ?? 18;
+    final currentMinute = hive.getSetting<int>('reminder_minute', defaultValue: 0) ?? 0;
+    
+    showTimePicker(
+      context: context,
+      initialTime: TimeOfDay(hour: currentHour, minute: currentMinute),
+      builder: (context, child) {
+        return Theme(
+          data: Theme.of(context).copyWith(
+            colorScheme: const ColorScheme.dark(
+              primary: AppColors.primaryMain,
+              onPrimary: Colors.white,
+              surface: AppColors.surfaceDark,
+              onSurface: AppColors.textPrimary,
+            ),
+          ),
+          child: child!,
+        );
+      },
+    ).then((time) {
+      if (time != null) {
+        hive.saveSetting('reminder_hour', time.hour);
+        hive.saveSetting('reminder_minute', time.minute);
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Reminder set for ${time.format(context)}'),
+          ),
+        );
+      }
+    });
+  }
+
+  void _showClearHistoryConfirmation(BuildContext context, HiveService hive) {
+    final historyCount = hive.getHistory().length;
+    if (historyCount == 0) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('No history to clear')),
+      );
+      return;
+    }
+    
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text(
+          'Clear Shopping History?',
+          style: AppTextStyles.titleMedium.copyWith(
+            color: AppColors.textPrimary,
+          ),
+        ),
+        content: Text(
+          'This will permanently delete all $historyCount shopping trips from your history.',
+          style: AppTextStyles.bodyMedium.copyWith(
+            color: AppColors.textSecondary,
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text('Cancel'),
+          ),
+          ElevatedButton(
+            onPressed: () async {
+              await hive.clearHistory();
+              if (context.mounted) {
+                Navigator.of(context).pop();
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('History cleared')),
+                );
+              }
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppColors.error,
+            ),
+            child: const Text('Clear'),
           ),
         ],
       ),

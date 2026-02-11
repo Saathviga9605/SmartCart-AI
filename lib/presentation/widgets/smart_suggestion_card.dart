@@ -37,14 +37,35 @@ class SmartSuggestionCard extends StatelessWidget {
         color: Colors.transparent,
         child: InkWell(
           onTap: () async {
-            final grocery = context.read<GroceryProvider>();
-            final ml = context.read<MLInferenceProvider>();
-            final pantry = context.read<SmartPantryProvider>();
-            final category = await ml.predictCategory(suggestion.itemName);
-            await grocery.addItem(
-                name: suggestion.itemName, category: category);
-            await pantry.refreshFromIngredients(
-                grocery.activeItems.map((e) => e.name).toList());
+            try {
+              final grocery = context.read<GroceryProvider>();
+              final ml = context.read<MLInferenceProvider>();
+              final pantry = context.read<SmartPantryProvider>();
+              final category = await ml.predictCategory(suggestion.itemName);
+              await grocery.addItem(
+                  name: suggestion.itemName, category: category);
+              await pantry.refreshFromIngredients(
+                  grocery.activeItems.map((e) => e.name).toList());
+              
+              if (context.mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text('${suggestion.itemName} added to your list!'),
+                    backgroundColor: AppColors.success,
+                    duration: const Duration(seconds: 2),
+                  ),
+                );
+              }
+            } catch (e) {
+              if (context.mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text('Failed to add ${suggestion.itemName}'),
+                    backgroundColor: AppColors.error,
+                  ),
+                );
+              }
+            }
           },
           borderRadius: BorderRadius.circular(20),
           child: Padding(

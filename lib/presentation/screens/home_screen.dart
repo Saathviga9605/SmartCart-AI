@@ -12,7 +12,7 @@ import '../widgets/animated_grocery_item.dart';
 import 'voice_input_overlay.dart';
 import 'add_edit_item_screen.dart';
 import 'settings_screen.dart';
-import 'recipe_provider.dart';
+import '../providers/recipe_provider.dart';
 import 'history_screen.dart';
 import '../widgets/recipe_suggestions_widget.dart';
 

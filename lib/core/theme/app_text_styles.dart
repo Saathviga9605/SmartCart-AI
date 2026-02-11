@@ -126,4 +126,12 @@ class AppTextStyles {
     fontSize: 13,
     fontWeight: FontWeight.w500,
   );
+
+  // Caption style (for very small text like timestamps, hints)
+  static TextStyle caption = GoogleFonts.poppins(
+    fontSize: 11,
+    fontWeight: FontWeight.normal,
+    height: 1.4,
+    letterSpacing: 0.4,
+  );
 }

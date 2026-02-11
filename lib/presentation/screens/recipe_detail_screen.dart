@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_text_styles.dart';
 import '../../data/models/recipe_match_model.dart';
+import '../../data/models/category_model.dart';
+import '../providers/grocery_provider.dart';
+import '../providers/ml_inference_provider.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+
 
 class RecipeDetailScreen extends StatelessWidget {
   final RecipeMatchModel recipe;
@@ -33,9 +38,54 @@ class RecipeDetailScreen extends StatelessWidget {
           ),
         ],
       ),
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {
-          // Add missing ingredients to cart logic could go here
+      floatingActionButton: recipe.missing.isEmpty 
+        ? null 
+        : FloatingActionButton.extended(
+        onPressed: () async {
+          try {
+            final grocery = context.read<GroceryProvider>();
+            final ml = context.read<MLInferenceProvider>();
+            int addedCount = 0;
+            
+            for (final ingredient in recipe.missing) {
+              try {
+                final category = await ml.predictCategory(ingredient);
+                await grocery.addItem(
+                  name: ingredient,
+                  category: category,
+                  quantity: 1,
+                );
+                addedCount++;
+              } catch (e) {
+                debugPrint('Error adding ingredient $ingredient: $e');
+              }
+            }
+            
+            if (context.mounted) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text('Added $addedCount ${addedCount == 1 ? 'item' : 'items'} to your list!'),
+                  backgroundColor: AppColors.success,
+                  action: SnackBarAction(
+                    label: 'View List',
+                    textColor: Colors.white,
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                  ),
+                ),
+              );
+            }
+          } catch (e) {
+            if (context.mounted) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text('Failed to add items: $e'),
+                  backgroundColor: AppColors.error,
+                ),
+              );
+            }
+          }
         },
         backgroundColor: AppColors.primaryMain,
         icon: const Icon(Icons.shopping_cart, color: Colors.white),

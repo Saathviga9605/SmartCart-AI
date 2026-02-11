@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import '../models/grocery_item_model.dart';
 import '../models/category_model.dart';
@@ -135,7 +136,9 @@ class HiveService {
       'timestamp': timestamp,
       'items': items.map((item) => item.toJson()).toList(),
     };
+    debugPrint('HiveService: Saving ${items.length} items to history at $timestamp');
     await historyBox.add(historyData);
+    debugPrint('HiveService: Successfully saved to history. Total history records: ${historyBox.length}');
   }
 
   /// Get shopping history

@@ -88,15 +88,7 @@ class CategoryDetailScreen extends StatelessWidget {
   }
 
   Widget _buildItemCard(int index) {
-    final items = [
-      ('Fresh Apples', '\$3.99'),
-      ('Organic Bananas', '\$2.50'),
-      ('Sweet Oranges', '\$4.25'),
-      ('Red Grapes', '\$5.99'),
-      ('Strawberries', '\$6.50'),
-      ('Blueberries', '\$7.99'),
-    ];
-    
+    final items = _getItemsForCategory(category.name);
     final item = items[index % items.length];
     
     return Container(
@@ -163,5 +155,118 @@ class CategoryDetailScreen extends StatelessWidget {
       ),
     ).animate().fadeIn(delay: Duration(milliseconds: index * 50))
       .scale(begin: const Offset(0.8, 0.8), end: const Offset(1, 1));
+  }
+
+  List<(String, String)> _getItemsForCategory(String categoryName) {
+    switch (categoryName.toLowerCase()) {
+      case 'fruits':
+        return [
+          ('Fresh Apples', '₹120/kg'),
+          ('Organic Bananas', '₹60/dozen'),
+          ('Sweet Oranges', '₹80/kg'),
+          ('Red Grapes', '₹150/kg'),
+          ('Fresh Strawberries', '₹250/pack'),
+          ('Blueberries', '₹350/pack'),
+          ('Watermelon', '₹40/kg'),
+          ('Mango (Seasonal)', '₹180/kg'),
+          ('Papaya', '₹35/kg'),
+          ('Pineapple', '₹50/piece'),
+          ('Pomegranate', '₹140/kg'),
+          ('Dragon Fruit', '₹200/kg'),
+        ];
+      case 'vegetables':
+        return [
+          ('Fresh Tomatoes', '₹30/kg'),
+          ('Green Capsicum', '₹60/kg'),
+          ('Onions', '₹40/kg'),
+          ('Potatoes', '₹25/kg'),
+          ('Fresh Carrots', '₹45/kg'),
+          ('Green Beans', '₹70/kg'),
+          ('Broccoli', '₹80/kg'),
+          ('Cauliflower', '₹35/piece'),
+          ('Spinach', '₹25/bunch'),
+          ('Cabbage', '₹30/piece'),
+          ('Cucumber', '₹35/kg'),
+          ('Lady Finger', '₹50/kg'),
+        ];
+      case 'dairy':
+        return [
+          ('Milk (1L)', '₹58/ltr'),
+          ('Paneer', '₹280/kg'),
+          ('Curd/Yogurt', '₹60/500g'),
+          ('Butter', '₹450/500g'),
+          ('Cheese Slices', '₹180/200g'),
+          ('Ghee', '₹550/500ml'),
+          ('Cream', '₹120/200ml'),
+          ('Buttermilk', '₹35/500ml'),
+          ('Mozzarella', '₹320/200g'),
+          ('Cottage Cheese', '₹290/kg'),
+        ];
+      case 'meat':
+        return [
+          ('Chicken Breast', '₹220/kg'),
+          ('Chicken Curry Cut', '₹180/kg'),
+          ('Mutton', '₹650/kg'),
+          ('Fish (Rohu)', '₹350/kg'),
+          ('Prawns', '₹550/kg'),
+          ('Chicken Wings', '₹200/kg'),
+          ('Minced Meat', '₹240/kg'),
+          ('Chicken Legs', '₹180/kg'),
+          ('Fish Fillet', '₹380/kg'),
+          ('Eggs (12pc)', '₹84/dozen'),
+        ];
+      case 'bakery':
+        return [
+          ('White Bread', '₹35/loaf'),
+          ('Brown Bread', '₹45/loaf'),
+          ('Buns (6pc)', '₹30/pack'),
+          ('Croissants', '₹120/pack'),
+          ('Cookies', '₹80/pack'),
+          ('Muffins', '₹150/pack'),
+          ('Cake (500g)', '₹350/piece'),
+          ('Pastries', '₹50/piece'),
+          ('Pizza Base', '₹40/piece'),
+          ('Garlic Bread', '₹120/pack'),
+        ];
+      case 'beverages':
+        return [
+          ('Coffee Powder', '₹320/200g'),
+          ('Tea Leaves', '₹180/250g'),
+          ('Fruit Juice', '₹120/1L'),
+          ('Cola', '₹80/1.5L'),
+          ('Mineral Water', '₹20/1L'),
+          ('Energy Drink', '₹100/250ml'),
+          ('Green Tea', '₹250/100g'),
+          ('Coconut Water', '₹35/300ml'),
+          ('Milk Shake Mix', '₹150/pack'),
+          ('Smoothie Mix', '₹200/pack'),
+        ];
+      case 'snacks':
+        return [
+          ('Potato Chips', '₹60/100g'),
+          ('Namkeen Mix', '₹80/200g'),
+          ('Biscuits', '₹35/pack'),
+          ('Popcorn', '₹120/pack'),
+          ('Nachos', '₹150/pack'),
+          ('Peanuts', '₹140/500g'),
+          ('Cashews', '₹680/500g'),
+          ('Almonds', '₹750/500g'),
+          ('Trail Mix', '₹320/pack'),
+          ('Protein Bars', '₹450/pack'),
+        ];
+      default: // other
+        return [
+          ('Rice (5kg)', '₹350/pack'),
+          ('Wheat Flour', '₹280/5kg'),
+          ('Cooking Oil', '₹180/1L'),
+          ('Sugar', '₹45/kg'),
+          ('Salt', '₹22/kg'),
+          ('Pasta', '₹120/500g'),
+          ('Noodles', '₹80/pack'),
+          ('Spices Mix', '₹150/pack'),
+          ('Pickles', '₹180/500g'),
+          ('Jam', '₹150/450g'),
+        ];
+    }
   }
 }

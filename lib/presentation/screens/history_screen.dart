@@ -24,13 +24,37 @@ class _HistoryScreenState extends State<HistoryScreen> {
     _loadHistory();
   }
 
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Reload history whenever screen becomes visible
+    _loadHistory();
+  }
+
   Future<void> _loadHistory() async {
-    final hive = context.read<HiveService>();
-    final history = hive.getHistory();
-    setState(() {
-      _history = history.reversed.toList(); // Newest first
-      _isLoading = false;
-    });
+    if (!mounted) return;
+    
+    try {
+      setState(() => _isLoading = true);
+      final hive = context.read<HiveService>();
+      final history = hive.getHistory();
+      
+      if (mounted) {
+        setState(() {
+          _history = history.reversed.toList(); // Newest first
+          _isLoading = false;
+        });
+        debugPrint('History loaded: ${_history.length} records');
+      }
+    } catch (e) {
+      debugPrint('Error loading history: $e');
+      if (mounted) {
+        setState(() {
+          _history = [];
+          _isLoading = false;
+        });
+      }
+    }
   }
 
   @override
@@ -40,13 +64,56 @@ class _HistoryScreenState extends State<HistoryScreen> {
         title: const Text('Shopping History'),
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
+        actions: [
+          if (_history.isNotEmpty)
+            IconButton(
+              icon: const Icon(Icons.delete_sweep),
+              onPressed: _confirmClearHistory,
+              tooltip: 'Clear all history',
+            ),
+        ],
       ),
-      body: _isLoading
-          ? const Center(child: CircularProgressIndicator())
-          : _history.isEmpty
-              ? _buildEmptyState()
-              : _buildHistoryList(),
+      body: RefreshIndicator(
+        onRefresh: _loadHistory,
+        child: _isLoading
+            ? const Center(child: CircularProgressIndicator())
+            : _history.isEmpty
+                ? _buildEmptyState()
+                : _buildHistoryList(),
+      ),
     );
+  }
+
+  Future<void> _confirmClearHistory() async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Clear History'),
+        content: const Text('Are you sure you want to clear all shopping history?'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(context, true),
+            style: TextButton.styleFrom(foregroundColor: AppColors.error),
+            child: const Text('Clear'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed == true && mounted) {
+      final hive = context.read<HiveService>();
+      await hive.clearHistory();
+      _loadHistory();
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('History cleared')),
+        );
+      }
+    }
   }
 
   Widget _buildEmptyState() {

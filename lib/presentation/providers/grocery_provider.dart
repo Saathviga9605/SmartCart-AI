@@ -51,15 +51,15 @@ class GroceryProvider with ChangeNotifier {
     for (final item in activeItems) {
       double price = 0;
       switch (item.category) {
-        // Simple mock prices for demo
-        case GroceryCategory.fruits: price = 3.50; break;
-        case GroceryCategory.vegetables: price = 2.00; break;
-        case GroceryCategory.dairy: price = 4.50; break;
-        case GroceryCategory.meat: price = 12.00; break;
-        case GroceryCategory.bakery: price = 3.00; break;
-        case GroceryCategory.beverages: price = 5.00; break;
-        case GroceryCategory.snacks: price = 4.00; break;
-        case GroceryCategory.other: price = 5.00; break;
+        // Indian market prices (INR)
+        case GroceryCategory.fruits: price = 100; break;
+        case GroceryCategory.vegetables: price = 40; break;
+        case GroceryCategory.dairy: price = 150; break;
+        case GroceryCategory.meat: price = 250; break;
+        case GroceryCategory.bakery: price = 60; break;
+        case GroceryCategory.beverages: price = 80; break;
+        case GroceryCategory.snacks: price = 90; break;
+        case GroceryCategory.other: price = 120; break;
       }
       total += price * item.quantity;
     }
@@ -215,10 +215,20 @@ class GroceryProvider with ChangeNotifier {
   Future<void> checkout() async {
     try {
       final completed = completedItems;
-      if (completed.isEmpty) return;
+      debugPrint('Checkout: Found ${completed.length} completed items');
+      
+      if (completed.isEmpty) {
+        debugPrint('Checkout: No completed items to save');
+        return;
+      }
 
+      debugPrint('Checkout: Saving to history...');
       await _repository.saveToHistory(completed);
+      debugPrint('Checkout: Successfully saved to history');
+      
+      debugPrint('Checkout: Clearing completed items...');
       await clearCompletedItems();
+      debugPrint('Checkout: Successfully cleared completed items');
       
       // Haptic feedback for success
       HapticFeedback.heavyImpact();

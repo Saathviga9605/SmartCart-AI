@@ -202,7 +202,7 @@ class _MyListScreenState extends State<MyListScreen> with SingleTickerProviderSt
                     children: [
                       Text('Projected Total:', style: AppTextStyles.bodySmall),
                       Text(
-                        '\$${provider.projectedCost.toStringAsFixed(2)}',
+                        '₹${provider.projectedCost.toStringAsFixed(0)}',
                         style: AppTextStyles.titleMedium.copyWith(color: AppColors.primaryMain, fontWeight: FontWeight.bold),
                       ),
                     ],
